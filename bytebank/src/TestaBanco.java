@@ -6,13 +6,13 @@ public class TestaBanco {
         paulo.cpf = "98225723287-87";
         paulo.profissao = "Segurança";
         Conta contaDoPaulo = new Conta();
-        contaDoPaulo.saldo = 100;
-        contaDoPaulo.titular = paulo;
-        System.out.println(contaDoPaulo.titular.nome);
+        contaDoPaulo.setSaldo(100);
+        contaDoPaulo.setTitular(paulo);
+        System.out.println(contaDoPaulo.getTitular().nome);
         Conta contaDaMonica = new Conta();
-        contaDaMonica.titular = new Cliente();
-        contaDaMonica.titular.nome = "Monica";
-        System.out.println(contaDaMonica.titular.nome);
+        contaDaMonica.setTitular(new Cliente());
+        contaDaMonica.getTitular().nome = "Monica";
+        System.out.println(contaDaMonica.getTitular().nome);
 
     }
 }
