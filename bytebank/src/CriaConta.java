@@ -6,6 +6,8 @@ public class CriaConta {
         System.out.println(primeiraConta.saldo);
         Conta segundaConta = primeiraConta;
         System.out.println(segundaConta.saldo);
+        primeiraConta.deposita(150);
+        System.out.println(primeiraConta.saldo);
 
     }
 }
