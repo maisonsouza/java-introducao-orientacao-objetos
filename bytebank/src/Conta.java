@@ -17,4 +17,10 @@ class Conta{
         }
     }
 
+    double transfere(double valor, Conta destino){
+        this.saca(valor);
+        destino.deposita(valor);
+        return this.saldo;
+    }
+
 }

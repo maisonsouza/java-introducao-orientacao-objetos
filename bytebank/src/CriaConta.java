@@ -14,6 +14,13 @@ public class CriaConta {
         conseguiu = primeiraConta.saca(76);
         System.out.println(primeiraConta.saldo);
         System.out.println(conseguiu);
+        Conta maison = new Conta();
+        maison.saldo = 100;
+        Conta jose = new Conta();
+        jose.saldo = 0;
+        maison.transfere(75,jose);
+        System.out.println(maison.saldo);
+        System.out.println(jose.saldo);
 
 
     }
