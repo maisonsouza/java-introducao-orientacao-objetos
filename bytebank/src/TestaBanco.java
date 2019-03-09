@@ -9,6 +9,10 @@ public class TestaBanco {
         contaDoPaulo.saldo = 100;
         contaDoPaulo.titular = paulo;
         System.out.println(contaDoPaulo.titular.nome);
+        Conta contaDaMonica = new Conta();
+        contaDaMonica.titular = new Cliente();
+        contaDaMonica.titular.nome = "Monica";
+        System.out.println(contaDaMonica.titular.nome);
 
     }
 }
